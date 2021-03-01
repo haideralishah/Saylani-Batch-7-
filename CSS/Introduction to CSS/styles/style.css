@@ -1,0 +1,88 @@
+/* 
+*{
+   background-color:  lightgrey;
+   color: brown;
+} */
+
+/* 
+h1 {
+    color: green;
+    background-color: yellow;
+} */
+
+/* #special{
+    background-color: red;
+} */
+
+/* p.odd{
+    background-color: blue;
+}
+.even{
+    background-color: purple;
+} */
+
+/* h1, p.odd, .even, #special{
+    color: red;
+    background-color: blue;
+} */
+
+/* 
+div > p  {
+    color: chocolate;
+}
+#container p{
+    color: yellow;
+} */
+
+/* 
+
+
+
+* {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: "Courier New", monospace;
+}
+
+i {
+    color: green;
+}
+
+i {
+    color: red;
+}
+
+ 
+b {
+    color: pink;
+}
+
+p b {
+    color: blue !important;
+}
+
+p b {
+    color: violet;
+}
+
+p#intro {
+    font-size: 100%;
+}
+
+p {
+    font-size: 25%;
+} */
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+    color: #665544;
+    padding: 10px;
+}
+
+.page {
+    border: 1px solid #665544;    
+    background-color: #efefef;
+    padding: inherit;
+}

@@ -1,0 +1,36 @@
+h1 {
+    color: bisque;
+}
+
+.color-name {
+    color: chocolate;
+}
+/* 
+div {
+    background-color: pink;
+} */
+
+.rgb-values {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: black; */
+    color: rgb(255, 0, 0);
+    /* opacity: 0.5; */
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.hexa-code {
+    color: #eeeb43fa;
+}
+
+
+div{
+    background-color:hsla(0, 100%, 30%, 0.4);
+}
+
+
+.hsl-values{
+    color: hsl(145, 100%, 50%);
+
+}
