@@ -106,7 +106,7 @@ p{
 }
  */
 
-h1:first-letter {
+/* h1:first-letter {
     font-size: 50px;
     text-decoration: underline;
     color: brown;
@@ -116,4 +116,30 @@ p:first-line {
     font-size: 25px;
     text-decoration: underline;
     color: red;
+} */
+
+/* a:link {
+    color: blue;
 }
+
+a:visited {
+    color: brown;
+}
+
+a:hover {
+    color: green;
+}
+
+input:hover{
+    background-color: grey;
+}
+
+input:focus{
+    background-color: hotpink;
+    color: indigo;
+}
+
+button:active{
+    background-color: khaki;
+    color: blueviolet;
+} */

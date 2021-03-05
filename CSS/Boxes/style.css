@@ -1,0 +1,48 @@
+/* div {
+    background-color: pink;
+    /* width: 200px;
+    height: 100px; */
+
+/* max-width: 600px;
+    min-width: 400px; */
+
+/* max-height: 150px;
+    min-height: 300px; */
+
+/* } */
+
+/* p{
+    background-color: aqua;
+    width: 80%;
+    height: 100%;
+} */
+
+/* p{
+    background-color: burlywood;
+    width: 450px;
+    height: 250px;
+    overflow: hidden;
+    /* overflow: scroll; */
+
+/*} */
+
+p {
+    /* border-width: 2px;    
+    border-style: solid;
+    border-color: red; */
+    /* border: 4px dotted blue; */
+
+
+    /* border-top: 1px dashed red; */
+    /* border-left: 2px dotted blue;
+    border-bottom: 3px dashed red;*/
+    /* border-right: 1px dashed purple; */
+
+
+    border-width: 2px 1px;
+    border-color: red blue purple green;
+    border-style: dotted dashed solid groove;
+
+
+
+}
