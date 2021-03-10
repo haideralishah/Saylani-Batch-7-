@@ -31,18 +31,104 @@ p {
     border-style: solid;
     border-color: red; */
     /* border: 4px dotted blue; */
-
-
     /* border-top: 1px dashed red; */
     /* border-left: 2px dotted blue;
     border-bottom: 3px dashed red;*/
     /* border-right: 1px dashed purple; */
-
-
+    /* 
     border-width: 2px 1px;
     border-color: red blue purple green;
     border-style: dotted dashed solid groove;
+ */
+}
 
+/* p{
+    border: 1px solid black;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 50px;
+    margin-bottom: 0;
+
+    margin: 30px 50px 0px 5px;
+} */
+
+
+/* p{
+    width: 80%;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 auto;
+
+
+    
+    padding: 5px 15px 20px 25px;
+    padding-top: 50px;
+    
+} */
+
+
+
+
+/* h1{
+    background-color: blanchedalmond;
+    display: inline-block;
+    width: 250px;
+}
+#special{
+    display: none;
+    visibility: hidden;
+} */
+
+/* b{
+    background-color: blanchedalmond; */
+    /* width: 800px; */
+/* } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face{
+    font-family: 'AlexBrushRegular';
+    src: url("fonts/AlexBrush-Regular.ttf");
+}
+
+.container{
+    font-family: AlexBrushRegular;
+
+
+    /* color: green;
+    background-color: lightgreen; */
+
+    color: red;
+    background-color: pink;
+
+    padding: 15px;
+    border: 30px double red;
+    border-image: url('images/heartborder.png') 20 20 20 20 repeat;
+    /* border-image: url('images/flag.jpg') 20 20 20 20 round; */
+    
+    
+    /* border: 2px double red;
+    border-radius: 20px; */
+    /* border-radius: 20px 80px 140px 200px / 60px 120px 180px 240px; */
 
 
 }

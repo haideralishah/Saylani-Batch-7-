@@ -1,0 +1,50 @@
+.relative {
+    border: 1px solid red;
+    background-color: blue;
+    opacity: 0.5;
+    position: relative;
+    top: 20px;
+    /* right: 20px; */
+}
+
+.absolute {
+    position: absolute;
+    top: 400px;
+    /* right: 0; */
+}
+
+.fixed {
+    background-color: bisque;
+    position: fixed;
+    top: 150px;
+    left: 250px;
+    /* z-index: -1; */
+}
+
+.header {
+    background-color: darkolivegreen;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 30px;
+}
+
+ul, li {
+    display: inline;
+}
+ul{
+    position: relative;
+    top:5px;
+}
+
+li{
+    margin: 5px;
+}
+
+li>a {
+    text-decoration: none;
+    color: darkorange;
+}
