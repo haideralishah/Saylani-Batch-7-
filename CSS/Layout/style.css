@@ -1,17 +1,17 @@
-.relative {
+/* .relative {
     border: 1px solid red;
     background-color: blue;
     opacity: 0.5;
     position: relative;
     top: 20px;
-    /* right: 20px; */
+    right: 20px;
 }
 
 .absolute {
     position: absolute;
     top: 400px;
-    /* right: 0; */
-}
+    right: 0;
+} */
 
 .fixed {
     background-color: bisque;
@@ -19,6 +19,10 @@
     top: 150px;
     left: 250px;
     /* z-index: -1; */
+}
+
+h1 {
+    margin-top: 50px;
 }
 
 .header {
@@ -35,16 +39,36 @@
 ul, li {
     display: inline;
 }
-ul{
+
+ul {
     position: relative;
-    top:5px;
+    top: 5px;
 }
 
-li{
+li {
     margin: 5px;
 }
 
 li>a {
     text-decoration: none;
     color: darkorange;
+}
+
+.col-1, .col-2 {
+    float: left;
+    background-color: lightpink;
+}
+
+.col-1 {
+    width: 30%;
+    border-right: 1px solid lightgray;
+}
+
+.col-2 {
+    width: 29%;
+    padding-left: 15px;
+}
+
+.clear{
+    clear: left;
 }
