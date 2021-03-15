@@ -1,0 +1,14 @@
+Prerequisite: 
+=> Install Node.js from nodejs.org (use node -v to check node version)
+=> Install Firebase CLI using npm install -g firebase-tools
+
+1. signup or signin console.firebase.google.com
+=> run following command: 
+firebase login
+
+2. go to console and create project
+
+
+3. run following commands in your project folder:
+firebase init (answer basic questions)
+firebase deploy

@@ -1,0 +1,52 @@
+* {
+    color: rgb(212, 76, 13);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(130, 219, 130);
+    padding: 15px;
+}
+
+h1, ul, li {
+    display: inline;
+}
+
+li {
+    margin-right: 50px;
+}
+
+ul {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(130, 219, 130);
+    padding: 10px;
+    background-color: rgb(212, 76, 13);
+}
+
+.cover {
+    clear: both;
+}
+
+.cover img {
+    display: block;
+    width: 100%;
+}
+
+
+.content p{
+    font-size: 20px;
+    width: 23.33%;
+    padding: 5%;
+    float: left;
+}
