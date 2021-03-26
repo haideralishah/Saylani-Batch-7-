@@ -1,0 +1,31 @@
+/* .img-1 {
+    float: left;
+    display: block;
+    margin: 0 auto;
+    width: 425px;
+    height: 290px;
+}
+
+.img-2 {
+    width: 425px;
+    height: 290px;
+    float: right;
+} */
+
+body{
+    background-color: gray;
+}
+d iv {
+    /* width: 400px;
+    height: 400px; */
+    color: #fff;
+
+    /* background-image: url('./flower.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right center; */
+
+    background: url('./flower.webp') no-repeat fixed left bottom;
+    background-size: 700px 500px;
+
+}

@@ -1,0 +1,34 @@
+
+@media (max-width: 1400px) { 
+
+    #mainDiv{
+        background-color: saddlebrown;
+    }    
+}
+@media (max-width: 1200px) { 
+
+    #mainDiv{
+        background-color: purple;
+    }    
+}
+
+@media (max-width: 992px) { 
+
+    #mainDiv{
+        background-color: red;
+    }    
+}
+
+@media (max-width: 768px) { 
+
+    #mainDiv{
+        background-color: yellow;
+    }    
+}
+
+@media (max-width: 576px) { 
+    #mainDiv{
+        background-color: aqua;
+    }    
+}
+
