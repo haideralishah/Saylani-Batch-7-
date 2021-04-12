@@ -228,3 +228,235 @@ method
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var fruits = ['apple', 'banana', 'cherry', 'orange', 'watermelon', 'grapes', 'avocado'];
+
+// var favFruits = fruits.slice(2, 5);
+
+// console.log(favFruits);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for (var i = 0; i <= 50; i++) {
+
+//     console.log(i);
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for (var i = 5; i <= 50; i = i + 2) {
+
+//     console.log(i);
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for (var i = 50; i >= 0; i--) {
+
+//     console.log(i);
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var siblingsCount = +prompt('let us know your siblings count.');
+// var allSiblings = [];
+
+// for(var sibling = 1; sibling <= siblingsCount; sibling++){
+//     var siblingName = prompt("Please tell your sibling number " + sibling);
+//     allSiblings.push(siblingName);
+// }
+// console.log(allSiblings);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var tableName = +prompt('tell a table name');
+// var times = +prompt('how many times table should run');
+
+// for (var tableTime = 0; tableTime <= times; tableTime++) {
+//     console.log(tableName + ' x ' + tableTime + ' = ' + tableName * tableTime);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var userName = 'haider';
+// var userNameInUpper = 'HAIDER';
+// //Haider
+
+// console.log(userName.toUpperCase());
+// console.log(userNameInUpper.toLowerCase());
+// console.log(userName[3]);
+// console.log(userName.length);
+
+
+var userName = prompt('what is your name?');
+
+var firstChr = userName[0];
+var remainChr = userName.slice(1);
+
+console.log(firstChr.toUpperCase() + remainChr.toLowerCase());
+
+
+
+
+
+
+
+
