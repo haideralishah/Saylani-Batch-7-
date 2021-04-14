@@ -446,12 +446,241 @@ method
 // console.log(userName.length);
 
 
+// var userName = prompt('what is your name?');
+
+// var firstChr = userName[0];
+// var remainChr = userName.slice(1);
+
+// console.log(firstChr.toUpperCase() + remainChr.toLowerCase());
+
+
+
+
+
+
+
+
+
+
+
+// var fruits = ['apple', 'banana', 'cherry', 'orange', 'watermelon', 'grapes', 'avocado'];
+// var fruitsLength = fruits.length;
+
+// for (var i = 0; i < fruitsLength; i++) {
+//     console.log(fruits[i]);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var isCleanCity = false;
+// var cleanCities = ['Karachi', 'Lahore', 'Islamabad', 'Peshawar', 'Quetta'];
+// var city = prompt('Which city do you live in?'); // Gujranwala
+
+// for (var i = 0; i < cleanCities.length; i++) {
+//     if (city === cleanCities[i]) {
+//         isCleanCity = true;
+//         break;
+//     }
+// }
+
+// if (isCleanCity) {
+//     console.log('ap ek saaf suthre sheher k baaasi hn.');
+// }
+// else {
+//     console.log('safai ka khas khyal rkhen');
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+art club teaches drawing
+required age 15
+
+male ~ welcome to males art club
+
+female ~ welcome to females art club
+*/
+
+
+// var age = prompt('what is your age?');
+// var gender = prompt('what is your gender?');
+// var requiredAge = 15;
+
+// if (age >= requiredAge) {
+//     if (gender === 'male') {
+//         console.log('welcome to males art club');        
+//     }
+//     else if (gender === 'female') {
+//         console.log('welcome to females art club');
+//     }
+// }
+// else {
+//     console.log('please try again once you are ' + requiredAge + ' years old.');
+// }
+
+
+
+
+
+
+
+
+
+
+// var abcd = ['a', 'b', 'c', 'd', 'e', 'f']
+
+// for (var i = 0; i < 10; i++) {
+//     for (var j = 0; j < abcd.length; j++) {
+//         console.log(i, abcd[j]);
+//     }
+// }
+
+// var firstNames = ['Aslam', 'Akram', 'Anwar'];
+// var lastNames = ['Khan', 'Ansari', 'Shaikh'];
+
+// for (var i = 0; i < firstNames.length; i++) {
+//     for (var j = 0; j < lastNames.length; j++) {
+//         console.log(firstNames[i] + ' ' + lastNames[j]);
+//     }
+// }
+
+
+/*
+.length
+.slice
+
+.toUpperCase()
+.toLowerCase()
+indexing
+userName[5]
+
+kArAChI
+Karachi
+*/
+// var userName = 'Haider';
+
+
+
+
+
+
+
+
+
+
+
 var userName = prompt('what is your name?');
-
 var firstChr = userName[0];
-var remainChr = userName.slice(1);
+var restChr = userName.slice(1);
 
-console.log(firstChr.toUpperCase() + remainChr.toLowerCase());
+console.log(firstChr.toUpperCase() + restChr.toLowerCase());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
