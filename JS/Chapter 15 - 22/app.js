@@ -638,13 +638,11 @@ Karachi
 
 
 
-var userName = prompt('what is your name?');
-var firstChr = userName[0];
-var restChr = userName.slice(1);
+// var userName = prompt('what is your name?');
+// var firstChr = userName[0];
+// var restChr = userName.slice(1);
 
-console.log(firstChr.toUpperCase() + restChr.toLowerCase());
-
-
+// console.log(firstChr.toUpperCase() + restChr.toLowerCase());
 
 
 
@@ -659,7 +657,193 @@ console.log(firstChr.toUpperCase() + restChr.toLowerCase());
 
 
 
+/*
+string
+number
+boolean
+special type of object (array)
 
+
+*/
+
+// var userName = "Haider";
+// var age = 23;
+// var adult = true;
+// var favSports = ['Cricket', 'pubg'];
+
+// console.log(typeof(userName));
+// console.log(typeof(age));
+// console.log(typeof(adult));
+// console.log(typeof(favSports));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var statement = "The quick brown fox jumps fox over fox the lazy dog."
+// var foxIndex = statement.indexOf("fox");
+// var foxLastIndex = statement.lastIndexOf("fox");
+
+// var lazyIndex = statement.indexOf("lazy");
+
+// // console.log(statement.slice(foxIndex, foxIndex + 3));
+// console.log(statement.slice(lazyIndex, lazyIndex + 4));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var statement = "The quick brown fox jumps fox over fox the lazy dog."
+// var allFoxIndexes = [];
+
+// for (var i = 0; i < statement.length; i++) {
+//     var foxCase = statement.slice(i, i + 3);
+//     if (foxCase === 'fox') {
+//         allFoxIndexes.push(i)
+//     }
+// }
+
+// console.log('condition matched.', allFoxIndexes);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var statement = "The quick brown fox jumps fox over fox the lazy dog."
+
+// //16
+// for (var i = 0; i < statement.length; i++) {
+//     var foxCase = statement.slice(i, i + 3);
+//     if (foxCase === 'fox') {
+//         statement = statement.slice(0, i) + "cat" + statement.slice(i + 3);
+//     }
+// }
+
+// console.log(statement);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var statement = 'This fox is a fox.';
+statement = statement.replace(/fox/g, 'cat');
+console.log(statement);
 
 
 
