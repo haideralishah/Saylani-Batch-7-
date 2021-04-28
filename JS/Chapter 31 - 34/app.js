@@ -187,8 +187,12 @@ Date and Time
 
 
 
-
 var today = new Date();
+
+today.setMonth(3);
+today.setDate(20);
+today.setFullYear(2020);
+
 console.log(today);
 
 
