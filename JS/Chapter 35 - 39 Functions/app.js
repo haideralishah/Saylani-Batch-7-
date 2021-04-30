@@ -68,7 +68,200 @@
 
 
 
-Math.sqrt();
+// Math.sqrt();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function greetUser(userName){
+//     console.log('Welcome ' + userName);
+//     return userName;    
+// }
+
+// var userGreet = greetUser('Haider'); // "Haider"
+// console.log(userGreet)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function findProduct(num1, num2) {
+//     return num1 * num2;
+// }
+
+// var constNum = Math.random();
+// var prod1 = findProduct(2, 3);
+// var prod2 = findProduct(3, 7);
+
+// console.log(prod1 * constNum);
+// console.log(prod2 * constNum);
+
+
+
+
+
+
+
+
+
+
+
+
+// var std = ['Aslam', 'Akram', 'Arham', 'Ammad'];
+
+// function pick1Std() {
+//     var bestRandomPick = Math.floor(Math.random() * std.length);
+//     var bestStd = std[bestRandomPick];
+//     return bestStd;
+// }
+
+// var firstPick = pick1Std();
+// var secondPick = pick1Std();
+
+// function speakToAudience(speaker) {
+//     console.log('Our speaker is ' + speaker);
+// }
+// function presentSlides(presentator) {
+//     console.log('Our presentator is ' + presentator);
+// }
+// speakToAudience(firstPick);
+// presentSlides(secondPick);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function fullName(firstName, lastName) {
+//     var fullName = firstName + " " + lastName;
+//     return fullName;
+// }
+
+// var userFullName = fullName('Haider', 'Ali');
+// console.log(userFullName);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// greetUser();
+
+// var userName = 'Haider';
+// console.log(userName);
+
+// function greetUser() {
+//     userName = 'Ali';
+//     console.log(userName);
+// }
+
+// greetUser();
+
+// console.log(userName);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+printNum(7); //7
+
+var num = 5;
+console.log(num); //5
+
+function printNum(num1) {
+    num = num1;
+    console.log(num);
+}
+
+
+console.log(num);  //5
+printNum(9); //9
+console.log(num); //9
+
 
 
 
