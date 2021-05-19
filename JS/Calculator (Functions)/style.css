@@ -1,0 +1,26 @@
+button{
+    width: 40px;
+    padding: 0;
+}
+
+#container{
+    width: 175px;
+}
+
+#screen{
+    width: 99%;
+    background-color: rgb(231, 211, 211);
+    text-align: right;
+    
+}
+
+
+.btn-container{
+    width: 99%;
+    padding: 0;
+
+}
+
+#screen-txt{
+    padding-right: 10px;
+}
