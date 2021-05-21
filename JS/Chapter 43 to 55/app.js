@@ -193,34 +193,92 @@
 
 
 
+/*
+***********************************
+**********Stop Watch Code**********
+***********************************
+*/
+// var secondsValue = document.getElementById('seconds');
+// var minutesValue = document.getElementById('minutes');
+// var timerInterval;
+
+// function startTimer() {
+//     timerInterval = setInterval(function () {
+//         var seconds = Number(secondsValue.innerHTML);
+//         if (seconds < 59) {
+//             secondsValue.innerHTML = Number(secondsValue.innerHTML) + 1;
+//         }
+//         else {
+//             secondsValue.innerHTML = 0;
+//             minutesValue.innerHTML = Number(minutesValue.innerHTML) + 1;
+//         }
+//     }, 1000);
+// }
+
+// function stopTimer() {
+//     clearInterval(timerInterval);
+// }
+
+
+
+// var timeOutRef = setTimeout(function(){
+//     alert("Please clear your dues.");
+// },1000);
+
+// clearTimeout(timeOutRef);
 
 
 
 
-var secondsValue = document.getElementById('seconds');
-var minutesValue = document.getElementById('minutes');
-var timerInterval;
 
-function startTimer() {
-    timerInterval = setInterval(function () {
-        var seconds = Number(secondsValue.innerHTML);
-        if (seconds < 59) {
-            secondsValue.innerHTML = Number(secondsValue.innerHTML) + 1;
-        }
-        else {
-            secondsValue.innerHTML = 0;
-            minutesValue.innerHTML = Number(minutesValue.innerHTML) + 1;
-        }
-    }, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function greet() {
+    console.log('Hello');
 }
 
-function stopTimer() {
-    clearInterval(timerInterval);
+
+
+var isFirstImag = true;
+function swapImage(element) {
+    if (isFirstImag) {
+        element.src = './images/2.jpg';
+        isFirstImag = false;
+    }
+    else {
+        element.src = './images/1.jpg';
+        isFirstImag = true;
+    }
 }
-
-
-
-
-
-
-
