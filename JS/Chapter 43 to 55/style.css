@@ -1,4 +1,17 @@
-img{
+img {
     width: 200px;
     height: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+.img-size {
+    width: 400px;
+    height: 300px
+}
+
+.border {
+    border: 10px solid red;
 }

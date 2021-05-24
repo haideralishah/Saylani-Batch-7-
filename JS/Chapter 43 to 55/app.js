@@ -265,20 +265,137 @@
 
 
 
-function greet() {
-    console.log('Hello');
+// function greet() {
+//     console.log('Hello');
+// }
+
+
+
+// var isFirstImag = true;
+// function swapImage(element) {
+//     if (isFirstImag) {
+//         element.src = './images/2.jpg';
+//         isFirstImag = false;
+//     }
+//     else {
+//         element.src = './images/1.jpg';
+//         isFirstImag = true;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function iAmReading(para) {
+//     para.style.color = "yellow";
+//     para.style.backgroundColor = "grey";
+// }
+
+// function iHaveRead(para){
+//     para.style.color = 'black';
+//     para.style.backgroundColor = 'white';
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var isExpand = true;
+// var para = "This is very long story about Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam corruptiassumenda illum voluptas quamrationequidem nam quis officia quasi, esse ducimus autem laborum qui magnam commodi cum in hic!"
+
+// function expandPara(element) {
+//     if (isExpand) {
+//         element.innerHTML = element.innerHTML.replace('...', para);
+//         isExpand = false;
+//     }
+// }
+
+// function compressPara(element) {
+//     element.innerHTML = element.innerHTML.replace(para, '...');
+//     isExpand = true;
+// }
+
+
+
+
+
+// function printValue(inputField) {
+//     console.log('hello world', inputField);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var province = document.getElementById('province');
+
+// function updateProvince(cityNameInput) {
+//     var cityName = cityNameInput.value.toLowerCase();
+//     switch (cityName) {
+//         case "karachi":
+//             province.value = "Sindh";
+//             break;
+//         case "lahore":
+//             province.value = "Punjab";
+//             break;
+//         case "peshawar":
+//             province.value = "KP";
+//             break;
+//         case "quetta":
+//             province.value = "Balochistan";
+//             break;
+//         default:
+//             console.log('You wrote wrong capital city.');
+//             break;
+
+//     }
+// }
+
+
+
+
+
+function makeInvisible(element) {
+    element.className = element.className + ' hidden';
 }
 
 
 
-var isFirstImag = true;
-function swapImage(element) {
-    if (isFirstImag) {
-        element.src = './images/2.jpg';
-        isFirstImag = false;
-    }
-    else {
-        element.src = './images/1.jpg';
-        isFirstImag = true;
-    }
-}
+
+
+
+
+
+
