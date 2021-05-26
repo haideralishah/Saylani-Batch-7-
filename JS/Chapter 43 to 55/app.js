@@ -387,9 +387,16 @@
 
 
 
-function makeInvisible(element) {
-    element.className = element.className + ' hidden';
-}
+// function makeInvisible(element) {
+//     element.className = element.className + ' hidden';
+//     makeVisible(element);
+// }
+
+// function makeVisible(element) {
+//     setTimeout(function () {
+//         element.className = element.className.replace('hidden', '');
+//     }, 3000);
+// }
 
 
 
