@@ -162,25 +162,187 @@ Qualification / Graduate
 
 
 
-var userName, age, qualification;
-var formFields = document.getElementById('form-fields');
-var result = document.getElementById('result');
+// var userName, age, qualification;
+// var formFields = document.getElementById('form-fields');
+// var result = document.getElementById('result');
 
-function getAllFields() {
-    userName = document.getElementById("user-name").value;
-    age = document.getElementById("age").value;
-    qualification = document.getElementById("qualification").value;
-    if (userName !== '' && age !== '' && qualification !== '') {
-        formFields.style.display = 'none';
-        showResult();
-    }
-    else{
-        document.getElementById('error').innerHTML = 'All fields are required.'
-    }
+// function getAllFields() {
+//     userName = document.getElementById("user-name").value;
+//     age = document.getElementById("age").value;
+//     qualification = document.getElementById("qualification").value;
+//     if (userName !== '' && age !== '' && qualification !== '') {
+//         formFields.style.display = 'none';
+//         showResult();
+//     }
+//     else{
+//         document.getElementById('error').innerHTML = 'All fields are required.'
+//     }
+// }
+
+// function showResult() {
+//     result.innerHTML = "<h1>Welcome " + userName + "</h1>";
+//     result.innerHTML = result.innerHTML + "<p>Your age is " + age + "</p>";
+//     result.innerHTML = result.innerHTML + "<p>Your qualification is " + qualification + "</p>";
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var div = document.getElementsByTagName('div')[0];
+
+// console.log(document.childNodes[1].childNodes[2].childNodes[3])
+
+// console.log(div.childNodes[1].childNodes[1]);
+
+
+
+
+
+
+
+
+
+
+
+// var div1 = document.getElementById('heading');
+
+// var div2 = document.getElementById('paragraphs');
+
+// console.log(div2.childNodes[0]);
+// console.log(div2.firstChild);
+// console.log(div2.lastChild);
+
+// console.log(div2.previousSibling);
+// console.log(div1.nextSibling);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+innerHTML
+input.value
+*/
+
+
+
+var inputForm = document.getElementById('item-list');
+var ol = document.getElementById('list-item');
+
+function addInList() {
+
+    var list = document.createElement('LI');
+
+    var listText = document.createTextNode(inputForm.value);
+
+    list.appendChild(listText);
+
+    list.setAttribute("title", inputForm.value);
+
+    ol.appendChild(list);
+
+    inputForm.value = '';
 }
 
-function showResult() {
-    result.innerHTML = "<h1>Welcome " + userName + "</h1>";
-    result.innerHTML = result.innerHTML + "<p>Your age is " + age + "</p>";
-    result.innerHTML = result.innerHTML + "<p>Your qualification is " + qualification + "</p>";
-}
+
+
+
+
+
+
+
+
+
+
+
+// var parentNode = document.getElementById('parent-node');
+// var elementToBeRemoved = parentNode.childNodes[3];
+
+// parentNode.removeChild(elementToBeRemoved);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
