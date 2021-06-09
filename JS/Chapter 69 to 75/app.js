@@ -294,17 +294,73 @@ undefined
 
 
 
-var users = [
-    { userName: 'haider', rollNum: '2343', age: 21 },
-    { userName: 'Akram', rollNum: '9945', age: 26 },
-    { userName: 'Ahmed', rollNum: '5566', age: 17 }
-]
+// var users = [
+//     { userName: 'haider', rollNum: '2343', age: 21 },
+//     { userName: 'Akram', rollNum: '9945', age: 26 },
+//     { userName: 'Ahmed', rollNum: '5566', age: 17 }
+// ]
 
-for (var i = 0; i < users.length; i++) {
-    if (users[i].age < 18) {
-        console.log(users[i].userName + ", you are under 18.");
-    }
+// for (var i = 0; i < users.length; i++) {
+//     if (users[i].age < 18) {
+//         console.log(users[i].userName + ", you are under 18.");
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// localStorage.setItem('teacherName', 'haider');
+
+// var teacherName = localStorage.getItem('teacherName');
+
+// console.log(teacherName);
+
+
+
+
+
+
+
+
+
+
+
+
+
+var user = {
+    email: 'headeralishah@gmail.com',
+    password: '123456'
 }
+
+
+localStorage.setItem('user', JSON.stringify(user));
+
+var userInfo = localStorage.getItem("user");
+
+console.log(JSON.parse(userInfo));
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
