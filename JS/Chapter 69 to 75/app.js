@@ -338,42 +338,174 @@ undefined
 
 
 
+// var user = {
+//     email: 'headeralishah@gmail.com',
+//     password: '123456'
+// }
+
+
+// localStorage.setItem('user', JSON.stringify(user));
+
+// var userInfo = localStorage.getItem("user");
+
+// console.log(JSON.parse(userInfo));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function Human(name, maritalStatus, intrest) {
+//     this.name = name;
+//     this.maritalStatus = maritalStatus;
+//     this.intrest = intrest;
+// }
+
+// var user1 = new Human('Haider', 'married', 'JavaScript');
+// var user2 = new Human('Arham', 'single', 'Python');
+// var user3 = new Human('Ali', 'Married', 'Swift');
+
+// console.log(user1.name);
+// console.log(user2.maritalStatus);
+// console.log(user3.intrest);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function User(name, email, password) {
+//     this.name = name;
+//     this.email = email;
+//     this.password = password;
+//     this.greet = function () {
+//         console.log('Welcome ' + this.name);
+//     }
+// }
+
+// var userName = document.getElementById('username');
+// var email = document.getElementById('email');
+// var password = document.getElementById('password');
+
+// function register() {
+//     var user = new User(userName.value, email.value, password.value);
+//     user.greet();
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// function Gym(plan, price, duration) {
+//     this.plan = plan;
+//     this.price = price;
+//     this.duration = duration;
+// }
+
+// Gym.prototype.calculateTotal = function () {
+//     var totalBill;
+//     if (this.duration < 6) {
+//         totalBill = this.duration * this.price;
+//     }
+//     else if (this.duration >= 6 && this.duration < 12) {
+//         totalBill = (this.duration * this.price) / 100 * 90;
+//     }
+//     else if (this.duration >= 12) {
+//         totalBill = (this.duration * this.price) / 100 * 75;
+//     }
+//     console.log("Your total bill is " + totalBill);
+// }
+
+
+// var package1 = new Gym('Plan A', 500, 3);
+// console.log(package1);
+
+// package1.calculateTotal();
+
+
+
+
+
+
+
+
+
+
 var user = {
-    email: 'headeralishah@gmail.com',
-    password: '123456'
+    email:'',
+    password: '',
+    name: ''
 }
 
-
-localStorage.setItem('user', JSON.stringify(user));
-
-var userInfo = localStorage.getItem("user");
-
-console.log(JSON.parse(userInfo));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(Object.keys(user).length);
 
 
 
