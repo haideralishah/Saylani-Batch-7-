@@ -470,23 +470,25 @@ undefined
 //     this.duration = duration;
 // }
 
-// Gym.prototype.calculateTotal = function () {
-//     var totalBill;
-//     if (this.duration < 6) {
-//         totalBill = this.duration * this.price;
+// Gym.prototype.swimming = true;
+
+// var package1 = new Gym('Plan A', 500, 3);
+// var package2 = new Gym('Plan B', 800, 1);
+// var package3 = new Gym('Plan C', 200, 1);
+
+// if ("price" in package1) {
+//     if (package1.hasOwnProperty('price')) {
+//         console.log('own property');
 //     }
-//     else if (this.duration >= 6 && this.duration < 12) {
-//         totalBill = (this.duration * this.price) / 100 * 90;
+//     else {
+//         console.log('prototype property');
 //     }
-//     else if (this.duration >= 12) {
-//         totalBill = (this.duration * this.price) / 100 * 75;
-//     }
-//     console.log("Your total bill is " + totalBill);
+
 // }
 
 
-// var package1 = new Gym('Plan A', 500, 3);
-// console.log(package1);
+// package3.swimming = false;
+// console.log(package1, package2, package3);
 
 // package1.calculateTotal();
 
@@ -499,15 +501,13 @@ undefined
 
 
 
-var user = {
-    email:'',
-    password: '',
-    name: ''
-}
+// var user = {
+//     email:'',
+//     password: '',
+//     name: ''
+// }
 
-console.log(Object.keys(user).length);
-
-
+// console.log(Object.keys(user).length);
 
 
 
@@ -521,6 +521,132 @@ console.log(Object.keys(user).length);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+// var num1 = Math.floor(Math.random() * 26); // 3
+// var num2 = Math.floor(Math.random() * 26);  // 25
+// var num3 = Math.floor(Math.random() * 26);  // 5
+
+// var variableName = alphabet[num1] + alphabet[num2] + alphabet[num3]; // dzf
+// var obj = {};
+// obj[variableName] = 'Haider';
+
+// console.log(obj);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Data Types:
+    string
+    number
+    boolean
+    arrays (special type of object)
+    object
+    functions
+    undefined
+    null
+
+Mathmatical Operations
+
+Loops
+
+conditions: 
+    &&
+    ||
+    ===
+    ==
+    !==
+    !=
+    <
+    >
+    <=
+    >=
+    switch
+    turnery
+
+methods: 
+    string
+    number
+    date methods
+
+Functions:
+    closure
+    call back
+    time events
+    return
+
+
+events: 
+
+
+DOM manipulation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
 
 
 
