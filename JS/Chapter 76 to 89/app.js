@@ -114,4 +114,4 @@ hash // hash // humidifier
 
 navigator.geolocation.getCurrentPosition(function (geoLoc) {
     console.log(geoLoc);
-});
+});          
