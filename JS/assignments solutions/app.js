@@ -85,56 +85,135 @@
 
 
 
-var img = document.getElementById('cover-story');
-var h1 = document.getElementById('story-title');
-var p = document.getElementById('story');
-var storyIndex = 0;
-var btn = document.getElementsByTagName('button');
+// var img = document.getElementById('cover-story');
+// var h1 = document.getElementById('story-title');
+// var p = document.getElementById('story');
+// var storyIndex = 0;
+// var btn = document.getElementsByTagName('button');
 
-var stories = [
-    { title: 'Hungry Dog', imgSrc: './images/story/hungrydog.jpg', story: '1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptates possimus ea, facilis commodi velit est quibusdam accusamus sapiente nisi, vero nihil id laudantium a? Repudiandae laudantium mollitia excepturi atque.' },
-    { title: 'Khachwa Aur Khargosh', imgSrc: './images/story/khachwaandkhargosh.jpg', story: '2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptates possimus ea, facilis commodi velit est quibusdam accusamus sapiente nisi, vero nihil id laudantium a? Repudiandae laudantium mollitia excepturi atque.' },
-    { title: 'Lion and Mouse', imgSrc: './images/story/lionandmouse.jpg', story: '3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptates possimus ea, facilis commodi velit est quibusdam accusamus sapiente nisi, vero nihil id laudantium a? Repudiandae laudantium mollitia excepturi atque.' }
-];
+// var stories = [
+//     { title: 'Hungry Dog', imgSrc: './images/story/hungrydog.jpg', story: '1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptates possimus ea, facilis commodi velit est quibusdam accusamus sapiente nisi, vero nihil id laudantium a? Repudiandae laudantium mollitia excepturi atque.' },
+//     { title: 'Khachwa Aur Khargosh', imgSrc: './images/story/khachwaandkhargosh.jpg', story: '2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptates possimus ea, facilis commodi velit est quibusdam accusamus sapiente nisi, vero nihil id laudantium a? Repudiandae laudantium mollitia excepturi atque.' },
+//     { title: 'Lion and Mouse', imgSrc: './images/story/lionandmouse.jpg', story: '3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptates possimus ea, facilis commodi velit est quibusdam accusamus sapiente nisi, vero nihil id laudantium a? Repudiandae laudantium mollitia excepturi atque.' }
+// ];
 
-updateStory();
-function updateStory() {
-    img.src = stories[storyIndex].imgSrc;
-    h1.innerHTML = stories[storyIndex].title;
-    p.innerHTML = stories[storyIndex].story;
-}
-
-
-function updateNewStory(storyStatus) {
-    storyStatus === 'next' ? storyIndex++ : storyIndex--;
-    if (storyIndex > 2) {
-        storyIndex = 0;
-    }
-    else if (storyIndex < 0) {
-        storyIndex = 2;
-    }
-    updateStory();
-}
+// updateStory();
+// function updateStory() {
+//     img.src = stories[storyIndex].imgSrc;
+//     h1.innerHTML = stories[storyIndex].title;
+//     p.innerHTML = stories[storyIndex].story;
+// }
 
 
-function expandImage() {
-    img.style.width = window.innerWidth + "px";
-    img.style.height = window.innerHeight + "px";
-    h1.innerHTML = '';
-    p.innerHTML = '';
-    for (var i = 0; i < btn.length; i++) {
-        btn[i].style.display = 'none';
-    }
-    img.onclick = shrink;
-}
+// function updateNewStory(storyStatus) {
+//     storyStatus === 'next' ? storyIndex++ : storyIndex--;
+//     if (storyIndex > 2) {
+//         storyIndex = 0;
+//     }
+//     else if (storyIndex < 0) {
+//         storyIndex = 2;
+//     }
+//     updateStory();
+// }
 
-function shrink() {
-    img.style.width = 100 + "%";
-    img.style.height = 400 + "px";
-    h1.innerHTML = stories[storyIndex].title;
-    p.innerHTML = stories[storyIndex].story;
-    for (var i = 0; i < btn.length; i++) {
-        btn[i].style.display = 'inline';
-    }
-    img.onclick = expandImage;
-}
+
+// function expandImage() {
+//     img.style.width = window.innerWidth + "px";
+//     img.style.height = window.innerHeight + "px";
+//     h1.innerHTML = '';
+//     p.innerHTML = '';
+//     for (var i = 0; i < btn.length; i++) {
+//         btn[i].style.display = 'none';
+//     }
+//     img.onclick = shrink;
+// }
+
+// function shrink() {
+//     img.style.width = 100 + "%";
+//     img.style.height = 400 + "px";
+//     h1.innerHTML = stories[storyIndex].title;
+//     p.innerHTML = stories[storyIndex].story;
+//     for (var i = 0; i < btn.length; i++) {
+//         btn[i].style.display = 'inline';
+//     }
+//     img.onclick = expandImage;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
