@@ -112,6 +112,48 @@ hash // hash // humidifier
 //     window.location.reload();
 // }, 3000)
 
-navigator.geolocation.getCurrentPosition(function (geoLoc) {
-    console.log(geoLoc);
-});          
+// navigator.geolocation.getCurrentPosition(function (geoLoc) {
+//     console.log(geoLoc);
+// });          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function registerWithTokyo() {
+    var monWindow = window.open('monk.html', '', 'height=200, width=400, top=200, left=400');
+
+
+
+}
