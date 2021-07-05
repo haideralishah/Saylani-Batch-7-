@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyC78s-ssNksImbAEKGZMj19Km8U_5NFD_U",
+            authDomain: "testing-e1e4f.firebaseapp.com",
+            projectId: "testing-e1e4f",
+            storageBucket: "testing-e1e4f.appspot.com",
+            messagingSenderId: "764881855683",
+            appId: "1:764881855683:web:6e8b658374f931b040ae76",
+            measurementId: "G-3THVDJEKLT"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+</head>
+
+<body>
+
+    <label>Email: <input type="email" id="email" /></label><br />
+    <label>Password: <input type="password" id="password" /></label><br />
+    <button onclick="register()">Register</button><br />
+
+    <button onclick="login()">Signin</button>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
