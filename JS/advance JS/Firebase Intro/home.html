@@ -34,18 +34,11 @@
 
 </head>
 
-<body>
+<body onload="whoIsUser()">
 
-    <label>User Name: <input type="text" id="username" /></label><br />
+   <h1>Hello Home Page</h1>
 
-    <label>Email: <input type="email" id="email" /></label><br />
-    <label>Password: <input type="password" id="password" /></label><br />
-    <button onclick="register()">Register</button><br />
-
-    <button onclick="login()">Signin</button>
-
-    <button onclick="sendPasswordResetEmail()">Reset Password</button>
-
+    <button onclick="signout()">Logout</button>
 
     <script src="app.js"></script>
 </body>

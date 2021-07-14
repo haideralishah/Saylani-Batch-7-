@@ -318,21 +318,19 @@
 
 
 
-// let countries = {
-//     provinces: {
-//     },
-//     cities: {
-//         sindhCapital: 'Karachi',
-//         balochistanCapital: 'Quetta',
-//         punjabCapital: 'Lahore',
-//         KPCapital: 'Peshawar',
-//         countryCapital: 'Islamabad'
-//     },
-//     districts: {
-//     }
-// }
-// let { sindhCapital, KPCapital } = countries.cities;
-// console.log(sindhCapital);
+let countries = {
+    provinces: {},
+    cities: {
+        sindhCapital: 'Karachi',
+        balochistanCapital: 'Quetta',
+        punjabCapital: 'Lahore',
+        KPCapital: 'Peshawar',
+        countryCapital: 'Islamabad'
+    },
+    districts: {}
+}
+let { sindhCapital, KPCapital , countryCapital } = countries.cities;
+console.log(sindhCapital);
 
 
 
@@ -347,15 +345,15 @@
 
 
 
-let fruits = ['apple', 'bnanana', 'orange', 'pineapple', ,'grapes','mango'];
+// let fruits = ['apple', 'bnanana', 'orange', 'pineapple', ,'grapes','mango'];
 
 
-let [ , favFruit , , ,  dislikedFruit] = fruits;
+// let [ , favFruit , , ,  dislikedFruit] = fruits;
 
 
-console.log(favFruit);
+// console.log(favFruit);
 
-console.log(dislikedFruit);
+// console.log(dislikedFruit);
 
 
 

@@ -1,0 +1,23 @@
+database 
+[
+	users
+	chats
+	appointments
+]
+
+
+
+users [
+	UID: {
+		userName,
+		email,
+		UID,
+		profileImage	
+	},
+	{}
+
+]
+
+
+
+
