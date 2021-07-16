@@ -32,6 +32,7 @@ function login() {
         .then((userCredential) => {
             console.log(userCredential);
             window.location = "./home.html";
+            // saveUserInFirestore();
         })
         .catch((error) => {
             console.error(error);
@@ -40,12 +41,12 @@ function login() {
 }
 
 
-function whoIsUser() {
-    setTimeout(() => {
-        const user = firebase.auth().currentUser;
-        console.log(user, 'inside who is user');
-    }, 3000)
-}
+// function whoIsUser() {
+//     setTimeout(() => {
+//         const user = firebase.auth().currentUser;
+//         console.log(user, 'inside who is user');
+//     }, 3000)
+// }
 
 firebase.auth().onAuthStateChanged((user) => {
     console.log(user, '*********************');
@@ -102,10 +103,49 @@ function sendPasswordResetEmail() {
 
 
 /*********Firestore********** */
+let db = firebase.firestore();
 
 function saveUserInFirestore(userToSave) {
-    firebase.firestore().collection("users").add(userToSave)
-        .then((docRef) => {
-            console.log("Document written with ID: ", docRef.id);
-        })
+    // db.collection("users").add(userToSave)
+    //     .then((docRef) => {
+    //         console.log("Document written with ID: ", docRef.id);
+    //     })
+
+
+    // db.collection('users').doc(userToSave.UID).set(userToSave);
+
+
+    // db.collection("users").doc("SaylaniTeacherHaider")
+    //     .update({
+    //         teacher: false
+    //     })
+    //     .then(() => {
+    //         console.log("Document successfully updated!");
+    //     })
+    //     .catch((error) => {
+    //         // The document probably doesn't exist.
+    //         console.error("Error updating document: ", error);
+    //     });;
+
+
+
+}
+
+
+
+
+function fetchUsers() {
+    db.collection("users")
+        .get()
+        .then((multipledocs) => {
+            console.log(multipledocs, '******************');
+            
+            multipledocs.forEach((user) => {
+                console.log(user.data(), 'inside for each loop', user.id);
+            });
+
+        }).catch((error) => {
+            console.log("Error getting document:", error);
+        });
+
 }
