@@ -21,3 +21,74 @@ users [
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************Authentication******************/
+
+var auth = firebase.auth();
+
+auth.createUserWithEmailAndPassword(email,password); //promise
+auth.signInWithEmailAndPassword(email,password); //promise
+
+
+auth.onAuthStateChanged(); //stream
+
+auth.signOut(); // promise
+
+auth.sendPasswordResetEmail(email); // promise
+
+
+
+/****************Firebase Firestore******************/
+
+
+/********To Save Data*******/
+
+let db = firebase.firestore();
+
+db.collection(collectionName).add(documentToAdd); //promise
+
+db.collection(collectionName).doc(documentID).set(documentToAdd); //promise
+
+db.collection(collectionName).doc(documentID).update(updatedProperty); //promise
+
+/********To Save Data*******/
+
+
+
+
+
+/********To fetch Data*******/
+
+
+
+
+
+
+
+
+/********To fetch Data*******/
+
+
+
+
+
+
+
+

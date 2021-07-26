@@ -53,7 +53,8 @@ firebase.auth().onAuthStateChanged((user) => {
     if (user) {
         // User is signed in, see docs for a list of available properties
         // https://firebase.google.com/docs/reference/js/firebase.User
-        var uid = user.uid;
+
+        fetchUsers();
         // ...
     } else {
         // User is signed out
@@ -112,7 +113,7 @@ function saveUserInFirestore(userToSave) {
     //     })
 
 
-    // db.collection('users').doc(userToSave.UID).set(userToSave);
+    db.collection('users').doc(userToSave.UID).set(userToSave);
 
 
     // db.collection("users").doc("SaylaniTeacherHaider")
@@ -135,17 +136,64 @@ function saveUserInFirestore(userToSave) {
 
 
 function fetchUsers() {
-    db.collection("users")
-        .get()
-        .then((multipledocs) => {
-            console.log(multipledocs, '******************');
-            
-            multipledocs.forEach((user) => {
-                console.log(user.data(), 'inside for each loop', user.id);
-            });
+    // var uid = firebase.auth().currentUser.uid;
+    // var docRef = db.collection("users").doc(uid);
 
-        }).catch((error) => {
+    // docRef.get()
+    //     .then((doc) => {
+    //         if (doc.exists) {
+    //             console.log("Document data:", doc.data(), doc.id);
+    //         } else {
+    //             // doc.data() will be undefined in this case
+    //             console.log("No such document!");
+    //         }
+    //     })
+    //     .catch((error) => {
+    //         console.log("Error getting document:", error);
+    //     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var docRef = db.collection("users");
+    docRef.get()
+        .then((usersSnapshot) => {
+            usersSnapshot.forEach((userDoc) => {
+                console.log(userDoc.data(),'*************');
+            })
+
+        })
+        .catch((error) => {
             console.log("Error getting document:", error);
         });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
