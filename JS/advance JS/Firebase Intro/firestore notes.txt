@@ -77,11 +77,11 @@ db.collection(collectionName).doc(documentID).update(updatedProperty); //promise
 /********To fetch Data*******/
 
 
+db.collection(collectionName).doc(documentID).get() //promise
 
+db.collection(collectionName).get() // promise
 
-
-
-
+ db.collection("taskList").onSnapshot()  // stream
 
 /********To fetch Data*******/
 
