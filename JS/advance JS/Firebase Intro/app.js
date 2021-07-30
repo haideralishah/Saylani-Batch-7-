@@ -225,8 +225,16 @@ function fetchAllLists() {
         .onSnapshot((snapshot) => {
             snapshot.docChanges().forEach((change) => {
                 if (change.type === "added") {
-                    showListInDOM(change.doc.data())
+                    let tasksObj = change.doc.data();
+                    tasksObj.id = change.doc.id;
+                    showListInDOM(tasksObj)
                 }
+                if (change.type === "removed") {
+                    console.log("Removed city: ", change.doc.id);
+                    removeListFromDOM(change.doc.id);
+                }
+
+
             });
         });
 }
@@ -234,93 +242,75 @@ function fetchAllLists() {
 let allTasksUl = document.getElementById('all-tasks');
 
 function showListInDOM(task) {
-    console.log(task);
     let li = document.createElement('li');
     let taskText = document.createTextNode(task.item);
     li.appendChild(taskText)
-
+    li.setAttribute('id', task.id)
+    let btn = document.createElement('button');
+    let btnText = document.createTextNode('delete');
+    btn.setAttribute('onClick', 'deleteListItem(this)');
+    btn.appendChild(btnText);
+    li.appendChild(btn);
     allTasksUl.appendChild(li);
+}
 
+
+function deleteListItem(btnElement) {
+    let docId = btnElement.parentNode.id;
+    db.collection("taskList").doc(docId).delete()
+        // .then(() => {
+        //     removeListFromDOM(docId);
+        // });
+}
+
+
+function removeListFromDOM(id) {
+    let targetToRemove = document.getElementById(id);
+    allTasksUl.removeChild(targetToRemove);
 }
 
 
 
 
+// var citiesRef = db.collection("cities");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var citiesRef = db.collection("cities");
-
-citiesRef.doc("SF").set({
-    name: "San Francisco",
-    state: "CA",
-    country: "USA",
-    capital: false,
-    population: 860000,
-    regions: ["west_coast", "norcal"]
-});
-citiesRef.doc("LA").set({
-    name: "Los Angeles",
-    state: "CA",
-    country: "USA",
-    capital: false,
-    population: 3900000,
-    regions: ["west_coast", "socal"]
-});
-citiesRef.doc("DC").set({
-    name: "Washington, D.C.",
-    state: null,
-    country: "USA",
-    capital: true,
-    population: 680000,
-    regions: ["east_coast"]
-});
-citiesRef.doc("TOK").set({
-    name: "Tokyo",
-    state: null,
-    country: "Japan",
-    capital: true,
-    population: 9000000,
-    regions: ["kanto", "honshu"]
-});
-citiesRef.doc("BJ").set({
-    name: "Beijing",
-    state: null,
-    country: "China",
-    capital: true,
-    population: 21500000,
-    regions: ["jingjinji", "hebei"]
-});
+// citiesRef.doc("SF").set({
+//     name: "San Francisco",
+//     state: "CA",
+//     country: "USA",
+//     capital: false,
+//     population: 860000,
+//     regions: ["west_coast", "norcal"]
+// });
+// citiesRef.doc("LA").set({
+//     name: "Los Angeles",
+//     state: "CA",
+//     country: "USA",
+//     capital: false,
+//     population: 3900000,
+//     regions: ["west_coast", "socal"]
+// });
+// citiesRef.doc("DC").set({
+//     name: "Washington, D.C.",
+//     state: null,
+//     country: "USA",
+//     capital: true,
+//     population: 680000,
+//     regions: ["east_coast"]
+// });
+// citiesRef.doc("TOK").set({
+//     name: "Tokyo",
+//     state: null,
+//     country: "Japan",
+//     capital: true,
+//     population: 9000000,
+//     regions: ["kanto", "honshu"]
+// });
+// citiesRef.doc("BJ").set({
+//     name: "Beijing",
+//     state: null,
+//     country: "China",
+//     capital: true,
+//     population: 21500000,
+//     regions: ["jingjinji", "hebei"]
+// });

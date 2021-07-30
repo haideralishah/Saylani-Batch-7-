@@ -68,6 +68,9 @@ db.collection(collectionName).doc(documentID).set(documentToAdd); //promise
 
 db.collection(collectionName).doc(documentID).update(updatedProperty); //promise
 
+
+db.collection("cities").doc("DC").delete() // promise
+
 /********To Save Data*******/
 
 
