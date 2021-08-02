@@ -230,10 +230,15 @@ function fetchAllLists() {
                     showListInDOM(tasksObj)
                 }
                 if (change.type === "removed") {
-                    console.log("Removed city: ", change.doc.id);
+                    console.log("Removed list: ", change.doc.id);
                     removeListFromDOM(change.doc.id);
                 }
-
+                if (change.type === "modified") {
+                    console.log("modified list: ", change.doc.id);
+                    let tasksObj = change.doc.data();
+                    tasksObj.id = change.doc.id;
+                    updateListFromDOM(tasksObj);
+                }
 
             });
         });
@@ -250,7 +255,17 @@ function showListInDOM(task) {
     let btnText = document.createTextNode('delete');
     btn.setAttribute('onClick', 'deleteListItem(this)');
     btn.appendChild(btnText);
+
+
+    let btnEdit = document.createElement('button');
+    let btnTextEdit = document.createTextNode('Edit');
+    btnEdit.setAttribute('onClick', 'editListItem(this)');
+    btnEdit.appendChild(btnTextEdit);
+
+
     li.appendChild(btn);
+    li.appendChild(btnEdit);
+
     allTasksUl.appendChild(li);
 }
 
@@ -258,9 +273,9 @@ function showListInDOM(task) {
 function deleteListItem(btnElement) {
     let docId = btnElement.parentNode.id;
     db.collection("taskList").doc(docId).delete()
-        // .then(() => {
-        //     removeListFromDOM(docId);
-        // });
+    // .then(() => {
+    //     removeListFromDOM(docId);
+    // });
 }
 
 
@@ -268,6 +283,38 @@ function removeListFromDOM(id) {
     let targetToRemove = document.getElementById(id);
     allTasksUl.removeChild(targetToRemove);
 }
+
+
+let addBtn = document.getElementById('add-btn');
+let editDocId;
+function editListItem(editBtnElement) {
+    // console.log(editBtnElement.parentNode.id);
+    editDocId = editBtnElement.parentNode.id;
+    let editedText = editBtnElement.parentNode.firstChild.nodeValue;
+    listItem.value = editedText;
+    addBtn.innerHTML = 'Update';
+    addBtn.setAttribute('onClick', 'updateListItem(this)');
+
+}
+
+function updateListItem(addBtnElement) {
+    console.log(addBtnElement, listItem.value);
+    db.collection('taskList').doc(editDocId).update({ item: listItem.value });
+
+    listItem.value = "";
+    addBtn.innerHTML = 'Add';
+    addBtn.setAttribute('onClick', 'addList()');
+    editDocId = undefined;
+
+}
+
+function updateListFromDOM(modifiedEl) {
+    let modifiedDOM = document.getElementById(modifiedEl.id);
+    modifiedDOM.firstChild.nodeValue = modifiedEl.item;
+}
+
+
+
 
 
 
