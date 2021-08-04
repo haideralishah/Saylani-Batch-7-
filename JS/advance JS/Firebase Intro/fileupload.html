@@ -17,6 +17,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
 
+
     <script>
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -26,25 +27,22 @@
             projectId: "testing-e1e4f",
             storageBucket: "testing-e1e4f.appspot.com",
             messagingSenderId: "764881855683",
-            appId: "1:764881855683:web:6e8b658374f931b040ae76",
-            measurementId: "G-3THVDJEKLT"
+            appId: "1:764881855683:web:86fa853d0f83139040ae76",
+            measurementId: "G-ZR6W70L1ET"
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
     </script>
-    <link rel="stylesheet" href="style.css">
-</head>
 
-<!-- <body onload="fetchUsers()"> -->
+</head>
 
 <body>
 
-    <h1>Hello Home Page</h1>
-    <img src="" alt="" id="user-pic-img">
-
-
-    <button onclick="signout()">Logout</button>
+    <h1>Hello Storage</h1>
+    <input type="file" id="dp" />
+    <button onclick="uploadImage()">Upload</button>
+    <img src="" alt="" id="dp-pic" />
 
     <script src="app.js"></script>
 </body>

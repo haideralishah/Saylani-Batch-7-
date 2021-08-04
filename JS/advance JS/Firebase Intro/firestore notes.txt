@@ -95,3 +95,25 @@ db.collection(collectionName).get() // promise
 
 
 
+
+
+
+
+
+
+
+
+/********Firebase Storage*******/
+
+refrence	
+image name with type
+
+blob, file
+
+fileRefrence.put() // promise
+
+
+downloadURL
+fileRefrence.getDownloadURL() // promise
+
+/********Firebase Storage*******/
