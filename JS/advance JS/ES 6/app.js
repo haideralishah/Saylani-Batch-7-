@@ -318,19 +318,19 @@
 
 
 
-let countries = {
-    provinces: {},
-    cities: {
-        sindhCapital: 'Karachi',
-        balochistanCapital: 'Quetta',
-        punjabCapital: 'Lahore',
-        KPCapital: 'Peshawar',
-        countryCapital: 'Islamabad'
-    },
-    districts: {}
-}
-let { sindhCapital, KPCapital , countryCapital } = countries.cities;
-console.log(sindhCapital);
+// let countries = {
+//     provinces: {},
+//     cities: {
+//         sindhCapital: 'Karachi',
+//         balochistanCapital: 'Quetta',
+//         punjabCapital: 'Lahore',
+//         KPCapital: 'Peshawar',
+//         countryCapital: 'Islamabad'
+//     },
+//     districts: {}
+// }
+// let { sindhCapital, KPCapital , countryCapital } = countries.cities;
+// console.log(sindhCapital);
 
 
 
@@ -359,3 +359,141 @@ console.log(sindhCapital);
 
 
 
+
+
+
+
+
+
+// let userName = prompt('what is your name?');
+
+// // let userNamePara = "My name is " + userName + '.';
+
+// let userNamePara = `My name is ${userName}.`;
+
+// let longStr = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati in doloremque beatae libero vero quidem saepe ea provident minima autem 
+// tenetur ut minu unde amet iste, inventore magni mollitia ratione.`
+
+// document.getElementById('user-name').innerHTML = userNamePara;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let userName = prompt('what is your name');
+
+// function myPromise() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve('Promise resolved.')
+//         }, 1)
+//     })
+// }
+
+
+// myPromise()
+//     .then((str) => {
+//         console.log(str);
+//     });
+
+
+// console.log('Wada ni nibhaya');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function myPromise() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Promise resolved.')
+        }, 2000)
+    })
+}
+
+async function callPromise() {
+    let str = await myPromise();
+    console.log('hello world', str);
+}
