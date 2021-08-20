@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAh2zC0u2cYs4wED4AUd49xC8EXCqsxTrM",
+            authDomain: "hackathon-batch7.firebaseapp.com",
+            projectId: "hackathon-batch7",
+            storageBucket: "hackathon-batch7.appspot.com",
+            messagingSenderId: "216082708962",
+            appId: "1:216082708962:web:42c62d9b2a020e2942a1bb",
+            measurementId: "G-RGEZ2PS4HQ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+</head>
+
+<body>
+
+    <select name="country" id="country">
+        <option value="92">Pakistan</option>
+        <option value="91">India</option>
+        <option value="90">Iran</option>
+        <option value="93">Afghanistan</option>
+    </select>
+
+
+    <button onClick="signup()">Register</button>
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -240,9 +240,11 @@ function fetchUsers() {
 
 
 
-
+// let taskLists;
 // function fetchAllLists() {
-//     db.collection("taskList")
+//     if (taskLists) taskLists();
+
+//     taskLists = db.collection("taskList")
 //         .onSnapshot((snapshot) => {
 //             snapshot.docChanges().forEach((change) => {
 //                 if (change.type === "added") {
@@ -264,6 +266,8 @@ function fetchUsers() {
 //             });
 //         });
 // }
+
+
 
 // let allTasksUl = document.getElementById('all-tasks');
 
@@ -504,3 +508,44 @@ function fetchUsers() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let lastVisible = 0;
+
+var docRef = db.collection("users")
+    .startAfter(lastVisible)
+    .limit(10);
+
+docRef.get()
+    .then((usersSnapshot) => {
+        usersSnapshot.forEach((userDoc) => {
+            console.log(userDoc.data(), '*************', userDoc.id);
+            lastVisible = lastVisible + 10;
+        });
+
+    })
+    .catch((error) => {
+        console.log("Error getting document:", error);
+    });
+
+
+window.location = "./home.html/dafjdaslfjd;asfj"
