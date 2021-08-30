@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAhLAHnxqQQUqev8rojVfnRP2mEDPBvgII",
+            authDomain: "dhoraji-learning.firebaseapp.com",
+            databaseURL: "https://dhoraji-learning.firebaseio.com",
+            projectId: "dhoraji-learning",
+            storageBucket: "dhoraji-learning.appspot.com",
+            messagingSenderId: "472387476837",
+            appId: "1:472387476837:web:6b2cbb8ca9262af0"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+
+
+        <div class="imgcontainer">
+            <label>
+                <img src="./images/img_avatar2.png" alt="Avatar" class="avatar avatar-custom" id="avatar-custom">
+                <input type="file" placeholder="Upload Image" onchange="imageSelected()" name="upload-image" required
+                    id="upload-image">
+            </label>
+        </div>
+
+        <br />
+
+        <label for="user-name"><b>Restaurant Name or User Name:</b></label>
+        <input type="text" placeholder="User Name Or Restaurant Name" name="user-name" required id="user-name">
+
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required id="email">
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required id="psw">
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required id="psw-repeat">
+
+        <label for="phone"><b>Phone:</b></label>
+        <input type="text" placeholder="Phone" name="phone" required id="phone">
+
+
+
+        <h1>Select your role:</h1>
+        <label class="container">Restaurant
+            <input type="radio" checked="checked" name="user-role" value="restaurant">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">Customer
+            <input type="radio" name="user-role" value="customer">
+            <span class="checkmark"></span>
+        </label>
+
+        <div class="dropdown custom-dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"
+                id="select-country-placeholder">Select Country
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu custom-dropdown-menu">
+                <li onclick="selectCountry(this)"><a href="JavaScript:void(0)">Pakistan</a></li>
+                <li onclick="selectCountry(this)"><a href="JavaScript:void(0)">India</a></li>
+                <li onclick="selectCountry(this)"><a href="JavaScript:void(0)">Afghanistan</a></li>
+            </ul>
+        </div>
+
+
+        <div class="dropdown custom-dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select City
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu custom-dropdown-menu" id="city-names">
+                <!-- <li><a href="JavaScript:void(0)">Karachi</a></li>
+                <li><a href="JavaScript:void(0)">Lahore</a></li>
+                <li><a href="JavaScript:void(0)">Peshawar</a></li> -->
+            </ul>
+        </div>
+
+        <p>If you already have an account <a href="signin.html" style="color:dodgerblue">Signin Here!</a>.</p>
+
+        <div class="clearfix">
+            <button class="signupbtn" onclick="regiserUser()">Sign Up</button>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
