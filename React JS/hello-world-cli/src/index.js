@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import Greeting from './components/greeting';
+
+import App from './App';
 
 
-ReactDOM.render(<Greeting userName="Haider" rollNumber="2643" />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 
 
