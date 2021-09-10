@@ -2,6 +2,10 @@ import React from "react";
 import Greeting from './components/greeting';
 import Story from './components/story';
 import SelfCounter from './components/self-counter'
+import logo from './logo.svg';
+import CurrentStory from './components/current-story';
+import UserInfo from './components/user-info';
+
 
 // function App() {
 //   return (
@@ -25,12 +29,20 @@ import SelfCounter from './components/self-counter'
 
 // function App() {
 //   return (
-//     <Story
-//       storyTitle="The boy who cried wolf"
-//       moral="Lying breaks trust — even if you’re telling the truth, no one believes a liar."
-//       story="Once, there was a boy who became bored when he watched over the village sheep grazing on the hillside. To entertain himself, he sang out, “Wolf! Wolf! The wolf is chasing the sheep!”"
-//     />
-
+//     <div>
+//       <Story
+//         imageSource={logo}
+//         storyTitle="The boy who cried wolf"
+//         moral="Lying breaks trust — even if you’re telling the truth, no one believes a liar."
+//         story="Once, there was a boy who became bored when he watched over the village sheep grazing on the hillside. To entertain himself, he sang out, “Wolf! Wolf! The wolf is chasing the sheep!”"
+//       />
+//       <Story
+//         imageSource={logo}
+//         storyTitle="The boy who cried wolf"
+//         moral="Lying breaks trust — even if you’re telling the truth, no one believes a liar."
+//         story="Once, there was a boy who became bored when he watched over the village sheep grazing on the hillside. To entertain himself, he sang out, “Wolf! Wolf! The wolf is chasing the sheep!”"
+//       />
+//     </div>
 //   )
 // }
 
@@ -45,8 +57,64 @@ import SelfCounter from './components/self-counter'
 
 
 
+// function App() {
+//   return <SelfCounter />;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function App() {
+//   return <CurrentStory />
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function App() {
-  return <SelfCounter />;
+  return (
+    <div>
+      <UserInfo
+        userName="Haider"
+        organisation="Saylani"
+        designation="Teacher"
+      />
+
+      <UserInfo
+        userName="Ahmed"
+        institute="KU"
+        course="BSCS"
+      />
+    </div>
+  )
 }
+
 
 export default App;
