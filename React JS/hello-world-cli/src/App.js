@@ -5,6 +5,8 @@ import SelfCounter from './components/self-counter'
 import logo from './logo.svg';
 import CurrentStory from './components/current-story';
 import UserInfo from './components/user-info';
+import GoogleSearch from "./components/google-search";
+import GoogleSearchResult from "./components/google-search-result";
 
 
 // function App() {
@@ -98,23 +100,26 @@ import UserInfo from './components/user-info';
 
 
 
-function App() {
-  return (
-    <div>
-      <UserInfo
-        userName="Haider"
-        organisation="Saylani"
-        designation="Teacher"
-      />
+// function App() {
+//   return (
+//     <div>
+//       <UserInfo
+//         userName="Haider"
+//         organisation="Saylani"
+//         designation="Teacher"
+//       />
 
-      <UserInfo
-        userName="Ahmed"
-        institute="KU"
-        course="BSCS"
-      />
-    </div>
-  )
+//       <UserInfo
+//         userName="Ahmed"
+//         institute="KU"
+//         course="BSCS"
+//       />
+//     </div>
+//   )
+// }
+
+function App(){
+  return <GoogleSearchResult />
 }
-
 
 export default App;
