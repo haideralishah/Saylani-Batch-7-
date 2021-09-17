@@ -7,7 +7,7 @@ import CurrentStory from './components/current-story';
 import UserInfo from './components/user-info';
 import GoogleSearch from "./components/google-search";
 import GoogleSearchResult from "./components/google-search-result";
-
+import Student from './components/student';
 
 // function App() {
 //   return (
@@ -118,8 +118,18 @@ import GoogleSearchResult from "./components/google-search-result";
 //   )
 // }
 
-function App(){
-  return <GoogleSearchResult />
+// function App() {
+//   return <GoogleSearchResult />
+// }
+
+
+
+function App() {
+  return <Student />
 }
+
+
+
+
 
 export default App;
