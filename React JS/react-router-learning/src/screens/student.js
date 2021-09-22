@@ -29,7 +29,7 @@ function Student() {
     return (
         Object.keys(allStudents).map((keys) => {
             let { name, rollNum } = allStudents[keys];
-            return <p key={keys}><Link to={`/student-details/${rollNum}`}>{name}</Link></p>
+            return <p key={keys}><Link to={`/student-details/${rollNum}/${name}`}>{name}</Link></p>
         })
     )
 }

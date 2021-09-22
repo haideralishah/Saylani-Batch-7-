@@ -9,6 +9,7 @@ import About from '../screens/about';
 import Student from '../screens/student';
 import Nav from '../components/navbar';
 import StudentDetails from '../screens/student-details';
+import Login from '../screens/login'
 
 function Routes() {
     return (
@@ -26,6 +27,9 @@ function Routes() {
                 </Route>
                 <Route path="/student-details/:rollNumber">
                     <StudentDetails />
+                </Route>
+                <Route path="/login">
+                    <Login />
                 </Route>
             </Switch>
         </Router>
