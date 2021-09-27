@@ -1,9 +1,9 @@
 import React from 'react';
-import FreeAPI from './components/free-api';
+import Routes from './configs/routes';
 
 function App() {
   return (
-    <FreeAPI />
+    <Routes />
   );
 }
 
