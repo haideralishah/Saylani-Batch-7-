@@ -11,6 +11,12 @@ function Nav() {
                 <li>
                     <Link to="/">Home</Link>
                 </li>
+                <li>
+                    <Link to="/animal-api">Animal</Link>
+                </li>
+                <li>
+                    <Link to="/snacks">Snacks</Link>
+                </li>
             </ul>
         </nav>
     )
