@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { GlobalContext } from '../context/context'
+import { GlobalContext } from '../context/context';
 
 function Snacks() {
     const { state, dispatch } = useContext(GlobalContext);
