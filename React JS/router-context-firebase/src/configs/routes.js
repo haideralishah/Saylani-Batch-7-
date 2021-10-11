@@ -11,7 +11,9 @@ import AnimalAPI from '../screens/animal-api-name';
 import Snacks from '../screens/snacks';
 import Signup from '../screens/signup';
 import Signin from '../screens/signin';
-import { auth, onAuthStateChanged } from './firebase';
+import AddStudent from '../screens/addstudent';
+import AllStudent from '../screens/allstudent';
+import { auth, onAuthStateChanged, db, doc, getDoc } from './firebase';
 
 export default function App() {
     const { state, dispatch } = useContext(GlobalContext);
@@ -19,13 +21,21 @@ export default function App() {
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
             if (user) {
-                dispatch({ type: "AUTH_USER", payload: user });
+                fetchUserInfo(user.uid);
             }
             else {
                 console.log('user not found');
             }
         })
     }, []);
+
+    const fetchUserInfo = async (uid) => {
+        let userRef = doc(db, 'users', uid);
+        let userInfo = await getDoc(userRef);
+        userInfo = userInfo.data();
+        console.log(userInfo);
+        dispatch({ type: "AUTH_USER", payload: userInfo });
+    }
 
     return (
         <Router>
@@ -39,12 +49,32 @@ export default function App() {
                         <Snacks />
                     </Route>
 
-                    <Route path="/signup">
-                        <Signup />
-                    </Route>
-                    <Route path="/signin">
-                        <Signin />
-                    </Route>
+                    {
+                        state.authUser ?
+                            null : <>
+                                <Route path="/signup">
+                                    <Signup />
+                                </Route>
+                                <Route path="/signin">
+                                    <Signin />
+                                </Route>
+                            </>
+                    }
+
+                    {
+                        state.authUser?.userRole === 'trainer' ?
+                            <>
+                                <Route path="/add-student">
+                                    <AddStudent />
+                                </Route>
+                                <Route path="/all-student">
+                                    <AllStudent />
+                                </Route>
+                            </> : null
+                    }
+
+
+
                     <Route path="/">
                         <FreeAPI />
                     </Route>

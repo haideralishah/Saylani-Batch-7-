@@ -11,8 +11,6 @@ function Snacks() {
     const signin = async () => {
         try {
             let { user } = await signInWithEmailAndPassword(auth, email, password);
-            console.log(user);
-            dispatch({ type: "AUTH_USER", payload: user });
         } catch (err) {
             setErrMsg(err.message);
             setTimeout(() => {

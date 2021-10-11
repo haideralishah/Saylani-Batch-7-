@@ -1,7 +1,7 @@
 export let data = {
     snacks: 'Rio',
     drink: 'Coffee',
-    authUser: {},
+    authUser: null,
 
 }
 
@@ -13,11 +13,6 @@ export function reducer(state, action) {
                 authUser: action.payload
             }
         }
-
-
-
-
-
 
         case "UPDATE_SNACK": {
             return {
