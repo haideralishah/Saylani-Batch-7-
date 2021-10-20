@@ -14,6 +14,7 @@ import Signin from '../screens/signin';
 import AddStudent from '../screens/addstudent';
 import AllStudent from '../screens/allstudent';
 import { auth, onAuthStateChanged, db, doc, getDoc } from './firebase';
+import SigninSide from '../screens/signinmaterial'
 
 export default function App() {
     const { state, dispatch } = useContext(GlobalContext);
@@ -42,6 +43,10 @@ export default function App() {
             <div>
                 <Nav />
                 <Switch>
+                    
+                    <Route path="/signinside">
+                        <SigninSide />
+                    </Route>
                     <Route path="/animal-api">
                         <AnimalAPI />
                     </Route>

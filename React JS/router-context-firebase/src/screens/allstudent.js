@@ -1,21 +1,27 @@
 import React, { useEffect, useContext, useState } from 'react';
 import { db, getDocs, collection, query, where } from '../configs/firebase';
 import { GlobalContext } from '../context/context';
+import { StudentContext } from '../context/student-context';
 
 function AllStudent() {
     const { state } = useContext(GlobalContext);
+    const studentContext = useContext(StudentContext);
+    let studentState = studentContext.state;
+
     const [myStudents, setMyStudents] = useState([]);
 
     useEffect(async () => {
+        console.log(studentContext, studentState.allStudents, '**************************');
+
         let studentRef = collection(db, 'students');
         let q = query(studentRef, where("teacherUid", "==", state.authUser.uid))
         let allStudents = await getDocs(q);
+        let myStudentsClone = myStudents.slice(0);
         allStudents.forEach((doc) => {
             console.log(doc.id, doc.data());
-            let myStudentsClone = myStudents.slice(0);
             myStudentsClone.push(doc.data());
-            setMyStudents(myStudentsClone);
         });
+        setMyStudents(myStudentsClone);
     }, [])
 
     return (

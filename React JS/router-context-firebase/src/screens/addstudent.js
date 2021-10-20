@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { GlobalContext } from '../context/context';
 import { db, addDoc, collection } from '../configs/firebase';
+import Button from '@mui/material/Button';
 
 function AddStudent() {
     const [name, setName] = useState('');
@@ -23,7 +24,9 @@ function AddStudent() {
             <label>Roll Number:<input type="text" value={rollNum} onChange={(e) => { setRollNum(e.target.value) }} /></label><br />
             <label>Marks: <input type="text" value={marks} onChange={(e) => { setMarks(e.target.value) }} /></label><br />
             <label>Feedback: <input type="text" value={feedback} onChange={(e) => { setFeedback(e.target.value) }} /></label><br />
-            <button onClick={addStudent}>Add Student</button>
+            {/* <button onClick={addStudent}>Add Student</button> */}
+
+            <Button onClick={addStudent} variant="contained">Add Student</Button>
         </div>
     );
 }
